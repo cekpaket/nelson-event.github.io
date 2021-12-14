@@ -55,6 +55,34 @@ body{background:#E8EAF6;margin:0;font-family:Roboto,sans-serif;}
 .gsc-webResult.gsc-result:hover{border-color:transparent!important;}
 .gsc-results{background-color:#E8EAF6!important;width:auto;}
 .gsc-results .gsc-cursor-box .gsc-cursor-current-page{border-color:#fff!important;background-color:#333!important;color:#fff!important;}
+  
+ /* Tabel Harga by Jagoann Redesign */
+.tabel-section{font-family:'Google Sans',Arial,sans-serif;position:relative;overflow:hidden;display:block;margin:15px 0;line-height:1.7}
+.tabel-section .tabel-title{font-size:1.1rem;margin:1rem 0 0;font-weight:700}
+.tabel-container{display:flex;max-width:1000px;margin:0 auto}
+.tabel-tag{margin:.5rem 0 1rem;font-size:13px;display:inline-block;background:#333;color:#fff;padding:3px 15px;border-radius:20px}
+a.jagoan-order-btn{font-size:14px;text-transform:uppercase;text-decoration:none;background:#333;color:#fff;display:inline-block;padding:7px 20px;border-radius:20px;transition:all .3s ease-in-out}
+a.jagoan-order-btn:hover{transform:scale(1.1)}
+.tabel-jagoan-column{background:#fff;padding:30px 15px;box-sizing:border-box;border-radius:10px;text-align:center;width:33%;margin:10px;box-shadow:0 7px 7px rgba(0,0,0,0.06);border:2px solid #fff;transition:all .3s ease-in-out}
+.tabel-jagoan-column ul{list-style:none;padding:10px 0;margin:0;font-size:14px;line-height:2.2}
+.tabel-jagoan-column img{width:50px}
+.tabel-section i{font-size:3rem}
+.jagoan-price{font-weight:700;font-size:22px}
+.service-info{opacity:.7}
+.jagoan-2-column .tabel-jagoan-column{width:50%}
+.tabel-jagoan-column:nth-child(1) .jagoan-price,.tabel-jagoan-column:nth-child(1) i{color:#f87200} /* Change Color Code */
+.tabel-jagoan-column:nth-child(2) .jagoan-price,.tabel-jagoan-column:nth-child(2) i{color:#ff5483} /* Change Color Code */
+.tabel-jagoan-column:nth-child(3) .jagoan-price,.tabel-jagoan-column:nth-child(3) i{color:#2b73f6} /* Change Color Code */
+.tabel-jagoan-column:nth-child(1):hover{border-color:#f87200} /* Change Color Code */
+.tabel-jagoan-column:nth-child(2):hover{border-color:#ff5483} /* Change Color Code */
+.tabel-jagoan-column:nth-child(3):hover{border-color:#2b73f6} /* Change Color Code */
+.tabel-jagoan-column:nth-child(1) .tabel-tag,.tabel-jagoan-column:nth-child(1) a.jagoan-order-btn{background:#f87200} /* Change Color Code */
+.tabel-jagoan-column:nth-child(2) .tabel-tag,.tabel-jagoan-column:nth-child(2) a.jagoan-order-btn{background:#ff5483} /* Change Color Code */
+.tabel-jagoan-column:nth-child(3) .tabel-tag,.tabel-jagoan-column:nth-child(3) a.jagoan-order-btn{background:#2b73f6} /* Change Color Code */
+@media screen and (max-width:580px){
+.tabel-jagoan-column,.jagoan-2-column .tabel-jagoan-column{width:auto}
+.tabel-container{display:block}
+}
 /*]]>*/
 </style>
 </head><!--<head>
@@ -105,8 +133,64 @@ body{background:#E8EAF6;margin:0;font-family:Roboto,sans-serif;}
 </div>
 </div>
 </div>
-<div id="custom-widget-ongkir" data-theme="v2" data-width="400" data-height="300"></div>
-<script type="text/javascript" src="//cekongkir.co.id/widget-ongkir.js"></script>
+<div class="tabel-section">
+<div class="tabel-container">
+    <div class="tabel-jagoan-column">
+        <img src='https://2.bp.blogspot.com/-HWl2PCk1T_g/XqqDylYxjCI/AAAAAAAAONY/h6Yr9fkzWhQ35ob37L9PnxiX7ExTmns1gCLcBGAsYHQ/s50/basic.png' alt='Basic'/>
+        <div class="tabel-title">Basic</div>
+        <div class="tabel-tag">20% off</div>
+        <div class="jagoan-price">Rp 150.000</div>
+        <div class="service-info">
+        <ul>
+        <li>Documentation</li>
+        <li>Premium Template</li>
+        <li>1 License</li>
+        <li>Full Optimization</li>
+        <li>1 Month Full Support</li>
+        <li>Easy Customize</li>
+        <li>-</li>
+        </ul>
+        </div>
+        <a class="jagoan-order-btn" href="#" title="#" target="_blank">Order Now</a>
+    </div>
+    <div class="tabel-jagoan-column">
+        <img src='https://2.bp.blogspot.com/-KVVFsnJlM9E/XqqD0Qo0KDI/AAAAAAAAONg/FIn1BXo4PU8xX12gCac755x9vXDHOfVvQCLcBGAsYHQ/s50/personal.png' alt='Personal'/>
+        <div class="tabel-title">Personal</div>
+        <div class="tabel-tag">Best Value</div>
+        <div class="jagoan-price">Rp 220.000</div>
+        <div class="service-info">
+        <ul>
+        <li>Documentation</li>
+        <li>Premium Template</li>
+        <li>3 License</li>
+        <li>Full Optimization</li>
+        <li>3 Month Full Support</li>
+        <li>Easy Customize</li>
+        <li>-</li>
+        </ul>
+        </div>
+        <a class="jagoan-order-btn" href="#" title="#" target="_blank">Order Now</a>
+    </div>
+    <div class="tabel-jagoan-column">
+        <img src='https://2.bp.blogspot.com/-QoGlZN-t_fQ/XqqDzmE276I/AAAAAAAAONc/AG5ZXRxQo9Q24-LVUtdg_Jf3Za0kZqacACLcBGAsYHQ/s50/developer.png' alt='Developer'/>
+        <div class="tabel-title">Developer</div>
+        <div class="tabel-tag">For Business</div>
+        <div class="jagoan-price">Rp 999.000</div>
+        <div class="service-info">
+        <ul>
+        <li>Documentation</li>
+        <li>Premium Template</li>
+        <li>Unlimited License</li>
+        <li>Full Optimization</li>
+        <li>6 Month Full Support</li>
+        <li>Easy Customize</li>
+        <li>1 Bonus Template</li>
+        </ul>
+        </div>
+        <a class="jagoan-order-btn" href="#" title="#" target="_blank">Order Now</a>
+    </div>
+</div>
+</div>
 <a class='back-to-blog' href='https://www.idrakyat.my.id/' title='Kembali ke homepage'>Kembali ke homepage</a>
   
 <!--
